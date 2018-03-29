@@ -220,10 +220,10 @@ module Tree
       @name, @content = name, content
 
       if name.kind_of?(Integer)
-        warn StructuredWarnings::StandardWarning,
-             'Using integer as node name.'\
-             ' Semantics of TreeNode[] may not be what you expect!'\
-             " #{name} #{content}"
+        # warn StructuredWarnings::StandardWarning,
+        #      'Using integer as node name.'\
+        #      ' Semantics of TreeNode[] may not be what you expect!'\
+        #      " #{name} #{content}"
       end
 
       self.set_as_root!
@@ -608,8 +608,8 @@ module Tree
         @children[name_or_index]
       else
         if num_as_name and not name_or_index.kind_of?(Integer)
-          warn StructuredWarnings::StandardWarning,
-               'Redundant use of the `num_as_name` flag for non-integer node name'
+          # warn StructuredWarnings::StandardWarning,
+          #      'Redundant use of the `num_as_name` flag for non-integer node name'
         end
         @children_hash[name_or_index]
       end

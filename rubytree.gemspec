@@ -65,7 +65,6 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files     = %w(README.md LICENSE.md API-CHANGES.rdoc History.rdoc)
   s.rdoc_options         = ['--title', 'Rubytree Documentation', '--quiet']
 
-  s.add_runtime_dependency 'structured_warnings' , '~> 0.3'
   s.add_runtime_dependency 'json'                , '~> 2.1'
 
   # Note: Rake is added as a development and test dependency in the Gemfile.
